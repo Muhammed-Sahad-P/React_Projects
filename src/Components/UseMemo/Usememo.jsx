@@ -18,10 +18,14 @@ function Usememo() {
     return counterOne % 2 === 0;
   }, [counterOne]);
   return (
-    <div>
-      <h4 style={{ color: "red" }}>Usememo</h4>
+    <div className="memodiv">
+      <h2>Use Memo</h2>
       <button onClick={incrementCounterOne}>Counter 1 : {counterOne}</button>
+      <br></br>
+      <br></br>
       <span>{isEven ? "EVEN" : "ODD"}</span>
+      <br></br>
+      <br></br>
       <button onClick={incrementCounterTwo}>Counter 2 : {counterTwo}</button>
     </div>
   );

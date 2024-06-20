@@ -22,12 +22,12 @@ function Fetch() {
   }, []);
 
   return (
-    <div className="Fetch">
-      <h1 style={{ color: "red" }}>Fetch API Data</h1>
+    <div className="fetchdiv">
+      <h1>Fetch API Data</h1>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {posts.map((post) => (
-        <div className="divfetch" key={post.id}>
+        <div key={post.id}>
           <h4>{post.quote}</h4>
           <p>{post.author}</p>
         </div>

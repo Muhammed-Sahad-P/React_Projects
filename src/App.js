@@ -11,6 +11,9 @@ import Switchtheme from "./Components/Theme/SwitchTheme";
 import Fetch from "./Components/FetchDAta/Fetch";
 import Usememo from "./Components/UseMemo/Usememo";
 import { Link, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import Registration from "./Components/ReactRouter/Registration";
+import Login from "./Components/ReactRouter/Login";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -18,43 +21,55 @@ function App() {
   return (
     <>
       <nav>
-        <ul>
+        <ul className="navitems">
           <li>
-            <Link to="/Todo">Todo</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
-            <Link to="/Theme">SwitchTheme</Link>
+            <Link to="/registration">Registration</Link>
           </li>
           <li>
-            <Link to="/Counter">Counter</Link>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link to="/UserForm">UserForm</Link>
+            <Link to="/todo">Todo</Link>
           </li>
           <li>
-            <Link to="/Fetch">Fetch</Link>
+            <Link to="/theme">SwitchTheme</Link>
           </li>
           <li>
-            <Link to="/Usememo">Usememo</Link>
+            <Link to="/counter">Counter</Link>
+          </li>
+          <li>
+            <Link to="/userform">UserForm</Link>
+          </li>
+          <li>
+            <Link to="/fetch">Fetch</Link>
+          </li>
+          <li>
+            <Link to="/usememo">UseMemo</Link>
           </li>
 
           <li>
-            <Link to="/CompF">CompF</Link>
+            <Link to="/compF">CompF</Link>
           </li>
         </ul>
       </nav>
 
       <Routes>
-        <Route path="/Todo" element={<Todo />} />
-        <Route path="/Theme" element={<Switchtheme />} />
-        <Route path="/Counter" element={<Counter />} />
-        <Route path="/UserForm" element={<UserForm />} />
-        <Route path="/Fetch" element={<Fetch />} />
-        <Route path="/UseMemo" element={<Usememo />} />
-        <Route path="/Doctitle1" element={<DocTitleOne />} />
-        <Route path="/Doctitle2" element={<DocTitleTwo />} />
-        <Route path="/CompE" element={<CompE />} />
-        <Route path="/CompF" element={<CompF />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/theme" element={<Switchtheme />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/userform" element={<UserForm />} />
+        <Route path="/fetch" element={<Fetch />} />
+        <Route path="/usememo" element={<Usememo />} />
+        <Route path="/doctitle1" element={<DocTitleOne />} />
+        <Route path="/doctitle2" element={<DocTitleTwo />} />
+        <Route path="/compE" element={<CompE />} />
+        <Route path="/compF" element={<CompF />} />
       </Routes>
     </>
   );

@@ -1,0 +1,234 @@
+.navitems {
+  background-color: aliceblue;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+}
+
+.navitems a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+}
+
+nav a {
+  margin-right: 16px;
+}
+
+.homemain {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+}
+
+/* Registeration Page */
+/* Login Page */
+.regdiv,
+.logdiv {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: auto;
+}
+
+.regdiv,
+.logdiv h1 {
+  text-align: center;
+  color: #3b2c2c;
+}
+
+.regform,
+.logform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.regform,
+.logform label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #3f3838;
+}
+
+.regform,
+.logform input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.regform button,
+.logform button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.regform button:hover,
+.logform button:hover {
+  background-color: #45a049;
+}
+
+/* SwitchTheme */
+
+.themediv {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.themediv button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.themediv button:hover {
+  background-color: #45a049;
+}
+
+/* UseReducer-count */
+
+.counterdiv p{
+ font-size: 30px;
+}
+
+.counterdiv {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.counterdiv button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counterdiv button:hover {
+  background-color: #45a049;
+}
+
+
+/* UserForm-customhook */
+
+.userformdiv{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+}
+
+.userformdiv label{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #3f3838;
+}
+
+.userformdiv button:hover{
+    background-color: #45a049;
+}
+
+.userformdiv button{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* FetchApi */
+
+.fetchdiv h1{
+   color: #000000;
+}
+
+.fetchdiv{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    color: rgb(93, 74, 74);
+}
+
+/* UseMemo */
+
+.memodiv{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    
+}
+
+.memodiv button{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.memodiv button:hover{
+    background-color: #45a049;
+}

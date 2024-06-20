@@ -18,8 +18,8 @@ function Counter(){
     const [state,dispatch] = useReducer(reducer,initialstate)
 
     return(
-        <div>
-            <h4 style={{color:"red"}}>UseReducer</h4>
+        <div className="counterdiv">
+            <h1>UseReducer</h1>
             <p>{state.count}</p>
          <button onClick={()=>dispatch({type:'increment'})}>increment</button>
          <button onClick={()=>dispatch({type:'decrement'})}>decrement</button>

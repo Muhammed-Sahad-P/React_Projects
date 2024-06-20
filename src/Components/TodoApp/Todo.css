@@ -1,14 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   background-color:rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
 }
 
 .Todocon {
-  background-color: rgb(0, 203, 44);
+  background-color:#B3BBD0;
   width: 70vw;
   max-width: 600px;
   margin: 5em auto;
@@ -19,7 +16,7 @@ body {
 
 .header {
   font-family: "Courier New", Courier, monospace;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
@@ -39,7 +36,7 @@ body {
 .input-container {
   display: flex;
   align-items: center;
-  background: rgb(0, 203, 44);
+  background: #B3BBD0;
   padding: 0.5em;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
@@ -64,13 +61,13 @@ body {
   padding: 0.5em 1em;
   border: none;
   cursor: pointer;
-  color: black;
-  background-color: greenyellow;
+  color: wheat;
+  background-color: #0E1F2D;
   transition: background-color 0.3s ease;
 }
 
 .Addbtn:hover {
-  background-color: limegreen;
+  background-color: #44517B;
 }
 
 .listtask {

@@ -1,15 +1,16 @@
 import React,{useState} from 'react'
 
 function Switchtheme () {
-    const [dark,settheme]=useState("#000");
+    const [dark,settheme]=useState("#23272F");
     const Color=()=>{
-        settheme(dark=="#fff"?"#000":"#fff");
+        settheme(dark=="#f0f8ff"?"#23272F":"#f0f8ff");
         document.body.style.background=dark;
     }
   return (
-    <div>
-      <h1 style={{color:"red"}}>Theme</h1>
-      <button onClick={Color} style={{backgroundColor: "white",fontStyle:"italic", width:"100px", height:"30px",borderRadius:"10px", marginTop:"20px"}}>Switch theme</button>
+    <div className='themediv'>
+      <h1>Theme</h1>
+      <p>Pls tap the button to change the theme</p>
+      <button onClick={Color}>Switch theme</button>
     </div>
   )
 }

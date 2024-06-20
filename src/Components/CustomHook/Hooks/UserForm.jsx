@@ -14,8 +14,8 @@ function UserForm() {
 
   return (
     
-    <div>
-        <h4 style={{color:"red"}}>UserForm-Custom-hook</h4>
+    <div className="userformdiv">
+        <h3>UserForm-Custom-hook</h3>
       <form onSubmit={submitHandler}>
         <div>
           <label>First name</label>
@@ -25,6 +25,7 @@ function UserForm() {
           <label>Last name</label>
           <input  value={lastname} onChange={e => setLastname (e.target.value)} type="text" />
         </div>
+        <br></br>
         <button>Submit</button>
       </form>
       <p>{error}</p>
