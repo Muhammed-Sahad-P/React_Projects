@@ -2,7 +2,7 @@ import React from "react";
 import { UserContext,ChannelContext } from "../../App";
 function CompF() {
   return (
-    <div>
+    <div className="compfdiv">
         <h4 style={{color:"red"}}>UseContext</h4>
       <UserContext.Consumer>
         {(user) => {

@@ -14,7 +14,8 @@ import { Link, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Registration from "./Components/ReactRouter/Registration";
 import Login from "./Components/ReactRouter/Login";
-
+import NotFound from "./Components/ReactRouter/NotFound";
+import MainBlog from "./Components/Blogs/MainBlog";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 function App() {
@@ -53,10 +54,17 @@ function App() {
           <li>
             <Link to="/compF">CompF</Link>
           </li>
+          <li>
+            <Link to="/*">NotFound</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
       </nav>
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/login" element={<Login />} />
@@ -70,7 +78,11 @@ function App() {
         <Route path="/doctitle2" element={<DocTitleTwo />} />
         <Route path="/compE" element={<CompE />} />
         <Route path="/compF" element={<CompF />} />
+        <Route path="/blog" element={<MainBlog />} />
+        <Route path="*" element={<NotFound />} />
+    
       </Routes>
+
     </>
   );
 }
