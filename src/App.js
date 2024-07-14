@@ -16,6 +16,7 @@ import Registration from "./Components/ReactRouter/Registration";
 import Login from "./Components/ReactRouter/Login";
 import NotFound from "./Components/ReactRouter/NotFound";
 import MainBlog from "./Components/Blogs/MainBlog";
+import TodoRedux from "./Components/Todo/TodoRedux";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 function App() {
@@ -52,7 +53,7 @@ function App() {
           </li>
 
           <li>
-            <Link to="/compF">CompF</Link>
+            <Link to="/todos">Todo Redux</Link>
           </li>
           <li>
             <Link to="/*">NotFound</Link>
@@ -78,6 +79,7 @@ function App() {
         <Route path="/doctitle2" element={<DocTitleTwo />} />
         <Route path="/compE" element={<CompE />} />
         <Route path="/compF" element={<CompF />} />
+        <Route path="/todos" element={<TodoRedux />} />
         <Route path="/blog" element={<MainBlog />} />
         <Route path="*" element={<NotFound />} />
     
