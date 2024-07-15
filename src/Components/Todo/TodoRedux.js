@@ -12,7 +12,7 @@ const TodoRedux = () => {
       dispatch(addTodo(title));
       setTitle("");
     }
-  };
+  };  
 
   return (
     <div>

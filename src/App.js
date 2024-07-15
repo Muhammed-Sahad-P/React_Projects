@@ -17,6 +17,7 @@ import Login from "./Components/ReactRouter/Login";
 import NotFound from "./Components/ReactRouter/NotFound";
 import MainBlog from "./Components/Blogs/MainBlog";
 import TodoRedux from "./Components/Todo/TodoRedux";
+import CounterRedux from "./Components/CounterRedux/CounterRedux";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 function App() {
@@ -61,6 +62,9 @@ function App() {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
+          <li>
+            <Link to="/counterredux">CounterRedux</Link>
+          </li>
         </ul>
       </nav>
 
@@ -82,6 +86,7 @@ function App() {
         <Route path="/todos" element={<TodoRedux />} />
         <Route path="/blog" element={<MainBlog />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/counterredux" element={<CounterRedux />} />
     
       </Routes>
 
